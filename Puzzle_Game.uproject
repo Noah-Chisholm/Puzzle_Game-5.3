@@ -3,8 +3,6 @@
 	"EngineAssociation": "5.3",
 	"Category": "",
 	"Description": "",
-	"Modules": [
-	],
 	"Plugins": [
 		{
 			"Name": "ModelingToolsEditorMode",
@@ -23,6 +21,10 @@
 		},
 		{
 			"Name": "SkeletalMerging",
+			"Enabled": true
+		},
+		{
+			"Name": "ActorPalette",
 			"Enabled": true
 		}
 	]
