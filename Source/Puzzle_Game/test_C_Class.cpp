@@ -1,0 +1,12 @@
+// Fill out your copyright notice in the Description page of Project Settings.
+
+
+#include "test_C_Class.h"
+
+test_C_Class::test_C_Class()
+{
+}
+
+test_C_Class::~test_C_Class()
+{
+}
