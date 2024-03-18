@@ -10,6 +10,6 @@ public class Puzzle_GameEditorTarget : TargetRules
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V4;
 
-		ExtraModuleNames.AddRange( new string[] { "Puzzle_GameEditor" } );
+		ExtraModuleNames.AddRange( new string[] { "Puzzle_Game" } );
 	}
 }

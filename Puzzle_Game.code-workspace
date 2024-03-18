@@ -1,0 +1,613 @@
+{
+	"folders": [
+		{
+			"name": "Puzzle_Game",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "D:\\Unreal Projects\\UE_5.3"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "Puzzle_Game Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"Debug",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"Debug",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Puzzle_Game Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"Debug",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"DebugGame",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"DebugGame",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Puzzle_Game Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"DebugGame",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"Development",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"Development",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Puzzle_Game Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"Development",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"Test",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"Test",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Puzzle_Game Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"Test",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"Shipping",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"Shipping",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Puzzle_Game Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_Game Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Puzzle_Game",
+					"Win64",
+					"Shipping",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_GameEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_GameEditor",
+					"Win64",
+					"Debug",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_GameEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_GameEditor",
+					"Win64",
+					"Debug",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Puzzle_GameEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_GameEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Puzzle_GameEditor",
+					"Win64",
+					"Debug",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_GameEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_GameEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_GameEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_GameEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Puzzle_GameEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_GameEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Puzzle_GameEditor",
+					"Win64",
+					"DebugGame",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_GameEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_GameEditor",
+					"Win64",
+					"Development",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_GameEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"Puzzle_GameEditor",
+					"Win64",
+					"Development",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"Puzzle_GameEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"label": "Puzzle_GameEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"Puzzle_GameEditor",
+					"Win64",
+					"Development",
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "D:\\Unreal Projects\\UE_5.3"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch Puzzle_Game (Debug)",
+				"request": "launch",
+				"program": "D:\\Unreal Projects\\Puzzle_Game 5.3\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "Puzzle_Game Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "D:\\Unreal Projects\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal Projects\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch Puzzle_Game (DebugGame)",
+				"request": "launch",
+				"program": "D:\\Unreal Projects\\Puzzle_Game 5.3\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "Puzzle_Game Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "D:\\Unreal Projects\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal Projects\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch Puzzle_Game (Development)",
+				"request": "launch",
+				"program": "D:\\Unreal Projects\\Puzzle_Game 5.3\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "Puzzle_Game Win64 Development Build",
+				"args": [
+				],
+				"cwd": "D:\\Unreal Projects\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal Projects\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch Puzzle_Game (Test)",
+				"request": "launch",
+				"program": "D:\\Unreal Projects\\Puzzle_Game 5.3\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "Puzzle_Game Win64 Test Build",
+				"args": [
+				],
+				"cwd": "D:\\Unreal Projects\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal Projects\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch Puzzle_Game (Shipping)",
+				"request": "launch",
+				"program": "D:\\Unreal Projects\\Puzzle_Game 5.3\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "Puzzle_Game Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "D:\\Unreal Projects\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal Projects\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch Puzzle_GameEditor (Debug)",
+				"request": "launch",
+				"program": "D:\\Unreal Projects\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "Puzzle_GameEditor Win64 Debug Build",
+				"args": [
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject"
+				],
+				"cwd": "D:\\Unreal Projects\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal Projects\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch Puzzle_GameEditor (DebugGame)",
+				"request": "launch",
+				"program": "D:\\Unreal Projects\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "Puzzle_GameEditor Win64 DebugGame Build",
+				"args": [
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject"
+				],
+				"cwd": "D:\\Unreal Projects\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal Projects\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"name": "Launch Puzzle_GameEditor (Development)",
+				"request": "launch",
+				"program": "D:\\Unreal Projects\\UE_5.3\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "Puzzle_GameEditor Win64 Development Build",
+				"args": [
+					"D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject"
+				],
+				"cwd": "D:\\Unreal Projects\\UE_5.3",
+				"stopAtEntry": false,
+				"console": "externalTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "D:\\Unreal Projects\\UE_5.3\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "D:\\Unreal Projects\\UE_5.3"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "D:\\Unreal Projects\\UE_5.3\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=D:\\Unreal Projects\\Puzzle_Game 5.3\\Puzzle_Game.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "externalTerminal",
+				"stopAtEntry": false,
+				"cwd": "D:\\Unreal Projects\\UE_5.3"
+			}
+		]
+	}
+}
